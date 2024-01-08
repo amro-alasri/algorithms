@@ -49,18 +49,22 @@
 # nums is sorted in non-decreasing order.
 
 class Solution(object):
-    def removeElement(self, nums, val):
+    def removeDuplicates(self, nums):
         """
         :type nums: List[int]
-        :type val: int
         :rtype: int
         """
-        while val in nums:
-            nums.remove(val)
+        k = 1
+        Repeat=True
 
-# Input: nums = [3,2,2,3], val = 3
-# Output: 2, nums = [2,2,_,_]
-op = Solution()
-nums = [3,2,2,3]
-val = 3
-[43].remove()
+        for i in range(1, len(nums)):
+            if nums[i]!=nums[i-1]:
+                nums[k] = nums[i]
+                k=k+1
+                Repeat=True
+            else:
+                if Repeat:
+                    nums[k]=nums[i]
+                    k=k+1
+                    Repeat=False
+        return k
