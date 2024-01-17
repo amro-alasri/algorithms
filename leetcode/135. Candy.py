@@ -20,6 +20,7 @@ class Solution(object):
         
         # Sum up the candies array
         total_candies = sum(candies)
+        # to print the candies
         print(candies)
         return total_candies
 
