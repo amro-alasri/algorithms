@@ -20,16 +20,12 @@ class Solution(object):
         
         # Sum up the candies array
         total_candies = sum(candies)
-        
+        print(candies)
         return total_candies
 
 
 # Example 1
+o = Solution()
 ratings1 = [1, 0, 2]
-output1 = min_candies(ratings1)
+output1 =  o.candy(ratings1)
 print("Example 1 Output:", output1)
-
-# Example 2
-ratings2 = [1, 2, 2]
-output2 = min_candies(ratings2)
-print("Example 2 Output:", output2)
