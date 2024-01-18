@@ -33,3 +33,24 @@ print(solution.trap(height1))  # Output: 6
 
 height2 = [4, 2, 0, 3, 2, 5]
 print(solution.trap(height2)) # Output: 9
+
+
+# another solution
+###################################
+# class Solution(object):
+#     def trap(self, height):
+#         i, j = 0, len(height)-1
+#         lMax, rMax = height[i], height[j]
+#         totWater = 0
+#         while i < j:
+#             if lMax < rMax:
+#                 i += 1
+#                 lMax = max(lMax, height[i])
+#                 totWater += (lMax - height[i])
+#             else:
+#                 j -= 1
+#                 rMax = max(rMax, height[j])
+#                 totWater += (rMax - height[j])
+        
+#         return totWater
+####################################
