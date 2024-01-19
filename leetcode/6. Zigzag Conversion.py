@@ -21,3 +21,18 @@ class Solution(object):
             row_index += direction
 
         return ''.join(rows)
+
+
+# Example usage:
+s = Solution()
+s1 = "PAYPALISHIRING"
+numRows1 = 3
+print(s.convert(s1, numRows1))  # Output: "PAHNAPLSIIGYIR"
+
+s2 = "PAYPALISHIRING"
+numRows2 = 4
+print(s.convert(s2, numRows2))  # Output: "PINALSIGYAHRPI"
+
+s3 = "A"
+numRows3 = 1
+print(s.convert(s3, numRows3))  # Output: "A"        
