@@ -20,3 +20,21 @@ class Solution(object):
 
         result.append(' '.join(cur).ljust(maxWidth))
         return result
+
+
+# Example usage:
+s = Solution()
+words1 = ["This", "is", "an", "example", "of", "text", "justification."]
+maxWidth1 = 16
+output1 = s.fullJustify(words1, maxWidth1)
+print(output1)
+
+words2 = ["What","must","be","acknowledgment","shall","be"]
+maxWidth2 = 16
+output2 = s.fullJustify(words2, maxWidth2)
+print(output2)
+
+words3 = ["Science","is","what","we","understand","well","enough","to","explain","to","a","computer.","Art","is","everything","else","we","do"]
+maxWidth3 = 20
+output3 = s.fullJustify(words3, maxWidth3)
+print(output3)
