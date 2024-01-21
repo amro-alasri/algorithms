@@ -13,4 +13,14 @@ class Solution(object):
                 return i
 
             return -1
-        
+
+s = Solution()
+haystack1 = "sadbutsad"
+needle1 = "sad"
+output1 = s.strStr(haystack1, needle1)
+print(output1)
+
+haystack2 = "leetcode"
+needle2 = "leeto"
+output2 = s.strStr(haystack2, needle2)
+print(output2)        
