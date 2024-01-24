@@ -24,3 +24,11 @@ class Solution(object):
                 right -= 1
 
         return max_area
+
+# add the use cases
+s = Solution()
+height1 = [1, 8, 6, 2, 5, 4, 8, 3, 7]
+print(s.maxArea(height1))  # Output: 49
+
+height2 = [1, 1]
+print(s.maxArea(height2))  # Output: 1        
