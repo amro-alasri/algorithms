@@ -32,3 +32,16 @@ class Solution(object):
                     right -= 1
         
         return result
+
+
+# add the use cases 
+
+nums1 = [-1, 0, 1, 2, -1, -4]
+s = Solution()
+print(s.threeSum(nums1))  # Output: [[-1, -1, 2], [-1, 0, 1]]
+
+nums2 = [0, 1, 1]
+print(s.threeSum(nums2))  # Output: []
+
+nums3 = [0, 0, 0]
+print(s.threeSum(nums3))  # Output: [[0, 0, 0]]        
