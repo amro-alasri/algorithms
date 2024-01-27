@@ -16,3 +16,20 @@ class Solution(object):
                 left += 1
             else:
                 right -= 1
+
+# add the use cases
+numbers1 = [2, 7, 11, 15]
+target1 = 9
+s = Solution()
+result1 = s.twoSum(numbers1, target1)
+print(result1)  # Output: [1, 2]
+
+numbers2 = [2, 3, 4]
+target2 = 6
+result2 = s.twoSum(numbers2, target2)
+print(result2)  # Output: [1, 3]
+
+numbers3 = [-1, 0]
+target3 = -1
+result3 = s.twoSum(numbers3, target3)
+print(result3)  # Output: [1, 2]                
